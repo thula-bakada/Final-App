@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App SP</title>
+    <link rel="stylesheet" href="coding/styling.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weathering">
+      <header>
+        <div class="searchbar">
+          <form id="city-weather">
+            <div class="city">
+              <input type="text" id="bar" placeholder="Enter a city" required />
+              <input type="submit" value="Search" />
+            </div>
+          </form>
+        </div>
+        </header>
+      <h1 id="selected-city">
+            <span class="currentcity" id="currentcity">Cape Town</span>
+            <span class="tempemoji">⛅</span>
+            <span class="currenttemp"
+              >23<span class="tempcelmain">°C</span>   
+       </h1>            
+      
+      <p class="weather-details">
+        <span id="current-time"> 15:09 </span>, Partly Cloudy <br />
+        Humidity: 54%, Wind:7 km/h
+      </p>
+      <content>
+        <div class="forecast">
+          <ul>
+            <li>
+              Tue 🌧️
+              <div class="forecasttemp">
+                <strong
+                  >12 <span class="tempcel">°C</span> - 16
+                  <span class="tempcel">°C</span>
+                </strong>
+              </div>
+            </li>
+            <li>
+              Wed 🌧️
+              <div class="forecasttemp">
+                <strong
+                  >8 <span class="tempcel">°C</span> - 13
+                  <span class="tempcel">°C</span>
+                </strong>
+              </div>
+            </li>
+            <li>
+              Thur ⛅
+              <div class="forecasttemp">
+                <strong
+                  >18 <span class="tempcel">°C</span> - 21
+                  <span class="tempcel">°C</span>
+                </strong>
+              </div>
+            </li>
+            <li>
+              Fri ⛅
+              <div class="forecasttemp">
+                <strong
+                  >19 <span class="tempcel">°C</span> - 23
+                  <span class="tempcel">°C</span>
+                </strong>
+              </div>
+            </li>
+            <li>
+              Sat ☀️
+              <div class="forecasttemp">
+                <strong
+                  >22 <span class="tempcel">°C</span> - 27
+                  <span class="tempcel">°C</span>
+                </strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </content>
+      <footer>
+        This project was coded by
+        <a href="https://www.linkedin.com/in/thula-bakada/"> Thula Bakada</a>
+        and is <a href="https://github.com/login"> on Github</a> and
+        <a href="https://app.netlify.com/login">hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="coding/javascripts.js"></script>
+  </body>
+</html>
